@@ -9,23 +9,67 @@
 </head>
 
 <body>
-  <img id="background" src="./assets/background.jpg" alt="SuperTuxKart Add-ons Background" />
   <nav>
     <ul>
       <!-- Left side links -->
-      <li><a class="left-links">Home</a></li>
-      <li><a class="left-links">Addons</a></li>
-      <li><a class="left-links">Stats</a></li>
-      <li><a class="left-links">Ranking</a></li>
+      <li><a class="left-links" href="./index.html">Home</a></li>
+      <li><a class="left-links" href="./addons.html">Add-ons</a></li>
+      <li><a class="left-links" href="./stats.html">Stats</a></li>
+      <li><a class="left-links" href="./ranking.html">Ranking</a></li>
       <!-- Right side links -->
-      <li><a class="right-links">Languages</a></li>
-      <li><a class="right-links">STK Homepage</a></li>
-      <li><a class="right-links">Login</a></li>
+      <li><a class="right-links" href="./login.html">Login</a></li>
+      <li><a class="right-links" href="https://supertuxkart.net">STK Homepage</a></li>
+      <li><select id="langs-dropdown" class="right-links">
+          <option value="en">English</option>
+          <option value="pt">Português</option>
+          <option value="es">Español</option>
+          <option value="fr">Français</option>
+        </select></li>
     </ul>
   </nav>
+
   <main>
+    <img id="background" src="./assets/background.jpg" alt="SuperTuxKart Add-ons Background" />
     <img id="logo" src="./assets/logo.png" alt="SuperTuxKart Logo" />
+
+    <div id="icons-grid">
+      <figure>
+        <img class="options" src="./assets/karts.png" />
+        <figcaption>Karts</figcaption>
+      </figure>
+
+      <figure>
+        <img class="options" src="./assets/tracks.png" />
+        <figcaption>Tracks</figcaption>
+      </figure>
+
+      <figure>
+        <img class="options" src="./assets/arenas.png" />
+        <figcaption>Arenas</figcaption>
+      </figure>
+
+      <figure>
+        <img class="options" src="./assets/rankings.png" />
+        <figcaption>Ranking</figcaption>
+      </figure>
+
+      <figure>
+        <img class="options" src="./assets/login.png" />
+        <figcaption>Login</figcaption>
+      </figure>
+    </div>
   </main>
+
+  <footer>
+    <img id="bottom-bar" src="./assets/bottom_bar.png" />
+    <div id="bottom-links">
+      <a class="footer" href="./about.html">About</a>
+      <p class="footer">|</p>
+      <a class="footer" href="./privacy.html">Privacy</a>
+      <p class="footer">|</p>
+      <a class="footer" href="https://supertuxkart.net/pt_BR/Community">Contribute</a>
+    </div>
+  </footer>
 </body>
 
 </html>
